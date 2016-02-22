@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="style/salesforce-lightning-design-system.min.css" rel="stylesheet" />
+    <link href="style/salesforce-lightning-design-system.css" rel="stylesheet" />
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sidebar Slide-In Menu Demo</title>
+    <style>
+        .temp {
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            background-color: black;
+        }
+    </style>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        html {
+            background: #ecf0f1;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizelegibility;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        #trigger {
+            background: #485A67;
+            color: white;
+            display: inline-block;
+            padding:initial;
+            float: left;
+            cursor: pointer;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+            transition: all 0.25s ease-in-out;
+            border: none;
+            border-radius: 2px;
+            border-bottom: 2px solid #c0392b;
+        }
+
+            #trigger:hover {
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            }
+
+            #trigger.active {
+                background: #c0392b;
+                transition: all 0.75s ease-in-out;
+            }
+
+        #menu {
+            background: #2c3e50;
+            position: absolute;
+            padding: 0 64px;
+            height: 100% !important;
+            position:fixed;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            z-index: 10;
+            transform: translate(-150%, 0px);
+            transition: all 0.75s ease-in-out;
+            margin-top: 50px;            
+        }
+
+            #menu ul {
+                margin: 16px 0;
+                padding: 0;
+                color: white;
+                list-style: none;
+            }
+
+                #menu ul li {
+                    margin: 16px 0;
+                    transition: all 0.25s ease-in-out;
+                }
+
+                    #menu ul li:hover {
+                        color: #bdc3c7;
+                        cursor: pointer;
+                    }
+
+            #menu.active {
+                -webkit-transform: translate(0%, 0px);
+                transform: translate(0%, 0px);
+                transition: all 0.75s ease-in-out;
+            }            
+
+        #content {
+            color: #2c3e50;
+            padding-top: 50px;
+        }
+
+            #content p, h1, .jquery-script-ads {
+                padding: 16px 50px;
+                line-height: 2;
+                width: 728px;
+                font-weight: 500;
+            }
+    </style>
+</head>
+<body class="slds">
+   
+  <div class="temp"><div id="trigger"> <span class="slds-icon__container" data-reactid=".1yqsoo73tog.1.2.0.2.1.1:$utility.2.$rows.0.0"><svg aria-hidden="true" class="slds-icon icon__svg icon-utility-rows slds-icon--large" data-reactid=".1yqsoo73tog.1.2.0.2.1.1:$utility.2.$rows.0.0.0"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/icons/utility-sprite/svg/symbols.svg#rows"></use></svg></span> </div></div>
+    
+    <div id="menu">
+        <ul>
+            <li>Home</li>
+            <li>Works</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>Sidebar Slide-In Menu Demo</h1>
+        <div class="jquery-script-ads">
+            <script type="text/javascript">
+<!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+            </script>
+            <script type="text/javascript"
+                    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis, felis id consectetur euismod, felis metus ullamcorper lectus, vitae efficitur erat mi ac est. Curabitur eu ipsum felis. Curabitur tristique orci id elit elementum, eu auctor quam fringilla. In hac habitasse platea dictumst. Morbi id est cursus, molestie nibh maximus, vulputate orci. Fusce rhoncus, justo ut ultricies condimentum, justo diam consectetur elit, at dignissim dolor erat ac metus. Curabitur risus nisi, mollis in lobortis eu, iaculis nec nisi. In cursus mauris nulla, a luctus augue commodo a. Suspendisse odio est, porttitor quis congue at, cursus venenatis leo. Cras in ipsum nulla. Nam volutpat risus sed ipsum finibus, tincidunt molestie metus placerat. In aliquam dapibus convallis.</p>
+        <p>Nulla tempus lectus metus, id pharetra lorem imperdiet in. Praesent vehicula tincidunt interdum. In hac habitasse platea dictumst. Quisque at laoreet mauris. Phasellus ultrices nibh viverra vulputate tincidunt. Etiam ut sagittis odio, id convallis odio. Donec commodo tellus quis orci interdum molestie. Quisque mollis eros risus, vitae vulputate nisl faucibus in. Aenean interdum lacus sed fermentum ultrices. Ut ex ligula, placerat vitae elementum sit amet, venenatis a arcu. Donec interdum dui vel sapien pellentesque tempus. Maecenas efficitur, diam quis molestie cursus, enim ante suscipit libero, eget cursus tortor turpis et nibh. Morbi finibus dui a bibendum imperdiet. Nunc lacinia ligula at tempus feugiat. Sed neque nibh, auctor efficitur sollicitudin vel, malesuada sit amet tortor.</p>
+        <p>Sed sodales, enim non molestie porta, sapien mi pulvinar elit, nec placerat ex enim eget diam. Curabitur semper dolor nec est iaculis, sit amet scelerisque ante egestas. Vestibulum sed nibh id ex rhoncus lobortis. Vivamus nibh felis, sagittis in arcu sit amet, dignissim viverra enim. Fusce nisl turpis, fermentum eget suscipit id, egestas a odio. Integer a eros auctor, pulvinar justo non, tempor orci. Vestibulum scelerisque, nisl et maximus hendrerit, dui nibh hendrerit augue, sed dictum elit sapien vitae risus. Aliquam turpis augue, accumsan sed aliquam ullamcorper, laoreet nec urna. Donec blandit lorem massa, quis ultrices dolor blandit bibendum. Quisque ut hendrerit nisi, vitae luctus ex.</p>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+$("#trigger").click(function() {
+    $("#menu").toggleClass("active");
+
+});
+
+$("#trigger").click(function() {
+    $("#trigger").toggleClass("active");
+    $('#content').fadeTo('fast', 0.5);
+
+});
+$("#content").click(function () {
+    $("#menu").removeClass("active");
+    $('#content').fadeTo(1000, 1);
+});
+    </script>
+</body>
+</html>
